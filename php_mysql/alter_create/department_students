@@ -1,0 +1,23 @@
+department
++-------------+-------------+
+|   Column    |    Type     |
++-------------+-------------+
+| shortform   | VARCHAR(20) | <- Unique Key
+| ...         | ...         |
++-------------+-------------+
+
+students
++------------------+-------------+
+|      Column      |    Type     |
++------------------+-------------+
+| name             | VARCHAR(100)|
+| rollno           | INT         |
+| department       | VARCHAR(20) | <- Foreign Key (references department.shortform)
+| university_regno | VARCHAR(50) | <- Primary Key
++------------------+-------------+
+
+
+
+
+
+
